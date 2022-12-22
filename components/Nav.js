@@ -54,7 +54,7 @@ export default function Navbar({
                     width="45px"
                     alt="logo"
                   />
-                  <span>TexoStarter</span>
+                  <h2>Banana DAO</h2>
                   {isDesktop && (
                     <motion.div
                       className={styles.hamburger}
@@ -73,7 +73,7 @@ export default function Navbar({
                     width="45px"
                     alt="logo"
                   />
-                  {isMobile && <span>TexoStarter</span>}
+                  {isMobile && <h4>Banana DAO</h4>}
                 </>
               )}
             </a>

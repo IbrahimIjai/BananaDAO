@@ -853,15 +853,15 @@ const tokenABI = [
   },
 ];
 
-const StableCoin = "0x765277EebeCA2e31912C9946eAe1021199B39C61";
-const Factory = "0x6E06f7666f83929CcC3ba2288bEAf387E3125485";
+const StableCoin = "0xE87D52EF9F5e35BC5b8A8Efba59762bCF73f8456";
+const Factory = "0x5b6F81225cf23803D4C4bC50b4A1c4EdfF2f07e0";
 const deadAddress = "0x0000000000000000000000000000000000000000";
-const rpcUrl = "https://rpc.exosama.com";
+const rpcUrl = "https://rpc-testnet.kcc.network";
 const provider = new ethers.providers.JsonRpcProvider(rpcUrl);
 const FactoryInstance = new Contract(Factory, factoryABI, provider);
 const tokenInstance = new Contract(StableCoin, tokenABI, provider);
-const queryHost = "https://sama.texostarter.com";
-// const queryHost = "http://localhost:3000";
+// const queryHost = "https://sama.texostarter.com";
+const queryHost = "http://localhost:3000";
 
 const contracts = {
   FactoryInstance,
@@ -875,3 +875,7 @@ const contracts = {
 };
 
 export { factoryABI, idoABI, tokenABI, contracts };
+
+
+// address private admin = 0xbBB08B58Edec7dbd3f8d9c02f05268C1FD773710; wallet 2 deployer
+//     address private proxyAdmin = 0xB249765ed8cEAf332c9C15705eF00c77725f3B19;wallwt1

@@ -175,6 +175,16 @@ export default function MobileMenu({ handleMobileClick, openMM }) {
                   </motion.div>
                 )}
               </motion.div>
+              <motion.div
+                className={styles.NavItemCont}
+                variants={itemVariants}
+              >
+                <div onClick={HandleStakingMenu} className={styles.Links}>
+                  <RiExchangeFundsFill />
+                  <p>Claim USDT</p>
+                </div>
+                
+              </motion.div>
               {open && (
                 <div className={styles.absoluteElements}>
                   <>

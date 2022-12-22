@@ -1,0 +1,30 @@
+.Body {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Body h5 {
+  padding: 0.5rem 1rem;
+}
+.Body .card {
+  margin-top: 5rem;
+}
+.Body .card .engineContainer {
+  display: flex;
+  padding: 3rem 1rem;
+  align-items: center;
+  justify-content: space-around;
+}
+.Body .card .engineContainer .input {
+  font-family: "Roboto", sans-serif;
+  color: #333;
+  font-size: 1.2rem;
+  border-radius: 0.2rem;
+  background-color: rgb(17, 9, 9);
+  border: none;
+  display: block;
+  border: 2px solid blue;
+  transition: all 0.3s;
+  width: 30%;
+}/*# sourceMappingURL=claim.module.css.map */

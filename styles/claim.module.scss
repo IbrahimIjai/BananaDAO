@@ -1,0 +1,35 @@
+.Body{
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h5{
+        padding: .5rem 1rem;
+    }
+
+    .card{
+        margin-top: 5rem;
+        .engineContainer{
+            display: flex;
+            padding: 3rem 1rem;
+            align-items: center;
+            justify-content: space-around;
+            .input{
+                font-family: 'Roboto', sans-serif;
+                color: #333;
+                font-size: 1.2rem;
+                border-radius: 0.2rem;
+                background-color: rgb(17, 9, 9);
+                border: none;
+                display: block;
+                border:2px solid blue;
+                transition: all 0.3s;
+                width: 30%;
+            }
+        }
+        
+
+    }
+        
+}
+
