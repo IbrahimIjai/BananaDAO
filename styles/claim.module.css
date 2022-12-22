@@ -7,6 +7,9 @@
 .Body h5 {
   padding: 0.5rem 1rem;
 }
+.Body .balance {
+  color: aqua;
+}
 .Body .card {
   margin-top: 5rem;
 }

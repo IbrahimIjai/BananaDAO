@@ -68,8 +68,8 @@ export default function Claim() {
   return (
     <div className={styles.Body}>
         <div className={styles.card}>
-        <h5>Amount available usdt in the bank: <span>{BankUSDT}</span> </h5>
-        <h5>You have <span>{userUSDT}</span>  usdt in your wallet </h5>
+        <h5>Amount available cUSDT in the bank: <span className={styles.balance}>{BankUSDT}</span> </h5>
+        <h5> Your current cUSDT Balance  is ...  <span className={styles.balance}>{userUSDT}</span> </h5>
         <div className={styles.engineContainer}>
             <input type="text" className={styles.input} placeholder="Amount" required="" onChange={setAmountHandler} />
             {
