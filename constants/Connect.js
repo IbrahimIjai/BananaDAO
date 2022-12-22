@@ -29,13 +29,13 @@ export default function Connect() {
       );
       return false;
     }
-    if (chainId === "0x83d") {
+    if (chainId === "322") {
       return true;
     }
     try {
       await window.ethereum.request({
         method: "wallet_switchEthereumChain",
-        params: [{ chainId: "0x83d" }],
+        params: [{ chainId: "322" }],
       });
       return true;
     } catch (switchError) {
@@ -48,15 +48,15 @@ export default function Connect() {
             method: "wallet_addEthereumChain",
             params: [
               {
-                chainId: "0x83d",
-                chainName: "Exosama Network",
-                rpcUrls: ["https://rpc.exosama.com"],
+                chainId: "322",
+                chainName: "KCC Testnet",
+                rpcUrls: ["https://rpc-testnet.kcc.network"],
                 nativeCurrency: {
-                  name: "ExoSama",
-                  symbol: "SAMA",
+                  name: "KCS",
+                  symbol: "tKCS",
                   decimals: 18,
                 },
-                blockExplorerUrls: ["https://explorer.exosama.com"],
+                blockExplorerUrls: ["https://scan-testnet.kcc.network"],
               },
             ],
           });
