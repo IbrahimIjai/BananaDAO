@@ -179,9 +179,12 @@ export default function MobileMenu({ handleMobileClick, openMM }) {
                 className={styles.NavItemCont}
                 variants={itemVariants}
               >
+                
                 <div onClick={HandleStakingMenu} className={styles.Links}>
                   <RiExchangeFundsFill />
+                  <Link href="/claimUSDT">
                   <p>Claim USDT</p>
+                  </Link>
                 </div>
                 
               </motion.div>
